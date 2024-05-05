@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.orgs.SUMS.UpdateSums">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUMS Adviser"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sumsDepartnment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sumsNoData"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUMS Officers"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="President"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sumsPresData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sumsPresNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="VicePresident"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sumsVPresData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sumsVPresNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Secretary"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sumsSecData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sumsSecNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Assistant Secretary"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sumsASecData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sumsASecNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Treasurer"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sumsTresData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sumsTresNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Assistant Treasurer"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sumsATresData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sumsATresNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Auditor"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sumsAuditorData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sumsAuditorNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Assistant Auditor"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sumsAAuditorData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sumsAAuditorNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Business Manager"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sumsBusData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sumsBusNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Project Manager"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sumsProData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sumsProNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Tech Officer"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sumsTechData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sumsTechNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="4th Year Representative"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sums4YrData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sums4YrNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="3rd Year Representative"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sums3YrData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sums3YrNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="2nd Year Representative"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sums2YrData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sums2YrNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="1st Year Year Representative"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sums1YrData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sums1YrNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Grade 12 Representative"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sumsG12Data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sumsG12NoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Grade 11 Representative"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sumsG11Data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sumsG11NoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

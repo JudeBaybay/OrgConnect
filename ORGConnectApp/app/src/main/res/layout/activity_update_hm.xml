@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.orgs.HM.UpdateHm">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HM Society Adviser"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hmDepartnment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hmNoData"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HM Society Officers"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="President"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hmPresData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/hmPresNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="VicePresident"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hmVPresData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/hmVPresNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Secretary"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hmSecData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/hmSecNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Assistant Secretary"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hmASecData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/hmASecNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Treasurer"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hmTresData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/hmTresNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Assistant Treasurer"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hmATresData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/hmATresNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Auditor"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hmAuditorData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/hmAuditorNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Assistant Auditor"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hmAAuditorData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/hmAAuditorNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Business Manager"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hmBusData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/hmBusNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Project Manager"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hmProData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/hmProNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Tech Officer"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hmTechData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/hmTechNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="4th Year Representative"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hm4YrData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/hm4YrNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="3rd Year Representative"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hm3YrData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/hm3YrNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="2nd Year Representative"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hm2YrData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/hm2YrNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="1st Year Year Representative"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hm1YrData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/hm1YrNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Grade 12 Representative"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hmG12Data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/hmG12NoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Grade 11 Representative"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hmG11Data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/hmG11NoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

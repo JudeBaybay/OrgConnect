@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ORGCONNECT"
+        tools:targetApi="31">
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.ACE.AddAce"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.TV.TvActivity"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.TV.UpdateTv"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.TV.AddTv"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.ACE.UpdateAce"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.ACE.AceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.CC.UpdateCc"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.CC.CcActivity"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.CC.AddCc"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.U.UpdateUn"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.U.AddUn"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.U.UnActivity"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.ATS.UpdateAts"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.ATS.AtsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.ATS.AddAts"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.PNS.UpdatePns"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.PNS.PnsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.PNS.AddPns"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.SUMS.SumsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.SUMS.UpdateSums"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.SUMS.AddSums"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.SYMS.UpdateSyms"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.SYMS.SymsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.SYMS.AddSyms"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.CS.UpdateCs"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.CS.CsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.CS.AddCs"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.HM.HmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.HM.AddHm"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.HM.UpdateHm"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.SC.ScActivity"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.SC.AddSc"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.menu.Menu"
+            android:exported="false" />
+        <activity
+            android:name=".orgs.SC.UpdateSc"
+            android:exported="false" />
+        <activity
+            android:name=".event.DeleteEventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.UpdateFaculty"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.AddFaculty"
+            android:exported="false" />
+        <activity
+            android:name=".UploadImage"
+            android:exported="false" />
+        <activity
+            android:name=".event.Event"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

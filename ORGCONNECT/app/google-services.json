@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "517487105456",
+    "firebase_url": "https://orgconnect-bc852-default-rtdb.firebaseio.com",
+    "project_id": "orgconnect-bc852",
+    "storage_bucket": "orgconnect-bc852.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517487105456:android:3893a95e05d1454a2ef275",
+        "android_client_info": {
+          "package_name": "com.example.orgconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzVwh-wgYSQ7xaB-LvB_GNljguYdH_3-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517487105456:android:35253fb5e007e55c2ef275",
+        "android_client_info": {
+          "package_name": "com.example.orgconnectapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzVwh-wgYSQ7xaB-LvB_GNljguYdH_3-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

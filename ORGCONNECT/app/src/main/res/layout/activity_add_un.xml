@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".orgs.U.AddUn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/addUnImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/avatar"
+            android:layout_gravity="center"
+            android:layout_marginTop="36dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addUnName"
+                android:layout_width="match_parent"
+                android:digits="abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Name" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addUnEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Email" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Spinner
+            android:id="@+id/addUnPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:gravity="center"
+            android:layout_marginVertical="16dp"
+            android:spinnerMode="dropdown"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add officer"
+            android:layout_marginTop="16dp"
+            android:textAllCaps="false"
+            android:id="@+id/addUnBtn"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

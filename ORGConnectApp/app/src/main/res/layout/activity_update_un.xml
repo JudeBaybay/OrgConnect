@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.orgs.U.UpdateUn">
+
+
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Unleashed Club Adviser"
+          android:gravity="center"
+          android:textSize="22sp"
+          android:textColor="@color/textColor"
+          android:textStyle="bold"
+          android:layout_marginTop="16dp"/>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginVertical="8dp"
+          />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/unDepartnment"
+          android:visibility="gone"
+          android:nestedScrollingEnabled="false"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/unNoData"
+          android:orientation="vertical">
+
+        <include layout="@layout/no_data_found"/>
+      </LinearLayout>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Unleashed Club Officers"
+          android:textColor="@color/textColor"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:textSize="22sp"
+          android:textStyle="bold"/>
+
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:text="President"
+          android:textColor="@color/textColor"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginVertical="8dp"
+           />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/unPresData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:nestedScrollingEnabled="false"
+          android:visibility="gone" />
+
+      <LinearLayout
+          android:id="@+id/unPresNoData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <include layout="@layout/no_data_found" />
+      </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:text="VicePresident"
+          android:textColor="@color/textColor"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginVertical="8dp"
+           />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/unVPresData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:nestedScrollingEnabled="false"
+          android:visibility="gone" />
+
+      <LinearLayout
+          android:id="@+id/unVPresNoData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <include layout="@layout/no_data_found" />
+      </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:text="Secretary"
+          android:textColor="@color/textColor"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginVertical="8dp"
+           />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/unSecData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:nestedScrollingEnabled="false"
+          android:visibility="gone" />
+
+      <LinearLayout
+          android:id="@+id/unSecNoData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <include layout="@layout/no_data_found" />
+      </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:text="Assistant Secretary"
+          android:textColor="@color/textColor"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginVertical="8dp"
+           />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/unASecData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:nestedScrollingEnabled="false"
+          android:visibility="gone" />
+
+      <LinearLayout
+          android:id="@+id/unASecNoData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <include layout="@layout/no_data_found" />
+      </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:text="Treasurer"
+          android:textColor="@color/textColor"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginVertical="8dp"
+           />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/unTresData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:nestedScrollingEnabled="false"
+          android:visibility="gone" />
+
+      <LinearLayout
+          android:id="@+id/unTresNoData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <include layout="@layout/no_data_found" />
+      </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:text="Assistant Treasurer"
+          android:textColor="@color/textColor"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginVertical="8dp"
+           />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/unATresData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:nestedScrollingEnabled="false"
+          android:visibility="gone" />
+
+      <LinearLayout
+          android:id="@+id/unATresNoData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <include layout="@layout/no_data_found" />
+      </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:text="Auditor"
+          android:textColor="@color/textColor"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginVertical="8dp"
+           />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/unAuditorData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:nestedScrollingEnabled="false"
+          android:visibility="gone" />
+
+      <LinearLayout
+          android:id="@+id/unAuditorNoData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <include layout="@layout/no_data_found" />
+      </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:text="Assistant Auditor"
+          android:textColor="@color/textColor"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginVertical="8dp"
+           />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/unAAuditorData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:nestedScrollingEnabled="false"
+          android:visibility="gone" />
+
+      <LinearLayout
+          android:id="@+id/unAAuditorNoData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <include layout="@layout/no_data_found" />
+      </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:text="Business Manager"
+          android:textColor="@color/textColor"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginVertical="8dp"
+           />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/unBusData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:nestedScrollingEnabled="false"
+          android:visibility="gone" />
+
+      <LinearLayout
+          android:id="@+id/unBusNoData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <include layout="@layout/no_data_found" />
+      </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:text="Project Manager"
+          android:textColor="@color/textColor"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginVertical="8dp"
+           />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/unProData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:nestedScrollingEnabled="false"
+          android:visibility="gone" />
+
+      <LinearLayout
+          android:id="@+id/unProNoData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <include layout="@layout/no_data_found" />
+      </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:text="Tech Officer"
+          android:textColor="@color/textColor"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginVertical="8dp"
+           />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/unTechData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:nestedScrollingEnabled="false"
+          android:visibility="gone" />
+
+      <LinearLayout
+          android:id="@+id/unTechNoData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <include layout="@layout/no_data_found" />
+      </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:text="4th Year Representative"
+          android:textColor="@color/textColor"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginVertical="8dp"
+           />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/un4YrData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:nestedScrollingEnabled="false"
+          android:visibility="gone" />
+
+      <LinearLayout
+          android:id="@+id/un4YrNoData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <include layout="@layout/no_data_found" />
+      </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:text="3rd Year Representative"
+          android:textColor="@color/textColor"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginVertical="8dp"
+           />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/un3YrData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:nestedScrollingEnabled="false"
+          android:visibility="gone" />
+
+      <LinearLayout
+          android:id="@+id/un3YrNoData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <include layout="@layout/no_data_found" />
+      </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:text="2nd Year Representative"
+          android:textColor="@color/textColor"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginVertical="8dp"
+           />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/un2YrData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:nestedScrollingEnabled="false"
+          android:visibility="gone" />
+
+      <LinearLayout
+          android:id="@+id/un2YrNoData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <include layout="@layout/no_data_found" />
+      </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:text="1st Year Year Representative"
+          android:textColor="@color/textColor"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginVertical="8dp"
+           />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/un1YrData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:nestedScrollingEnabled="false"
+          android:visibility="gone" />
+
+      <LinearLayout
+          android:id="@+id/un1YrNoData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <include layout="@layout/no_data_found" />
+      </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:text="Grade 12 Representative"
+          android:textColor="@color/textColor"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginVertical="8dp"
+           />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/unG12Data"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:nestedScrollingEnabled="false"
+          android:visibility="gone" />
+
+      <LinearLayout
+          android:id="@+id/unG12NoData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <include layout="@layout/no_data_found" />
+      </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:text="Grade 11 Representative"
+          android:textColor="@color/textColor"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginVertical="8dp"
+           />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/unG11Data"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:nestedScrollingEnabled="false"
+          android:visibility="gone" />
+
+      <LinearLayout
+          android:id="@+id/unG11NoData"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <include layout="@layout/no_data_found" />
+      </LinearLayout>
+
+
+    </LinearLayout>
+
+  </androidx.core.widget.NestedScrollView>
+
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
